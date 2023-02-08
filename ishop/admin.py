@@ -14,3 +14,4 @@ class ProductAdmin(admin.ModelAdmin):
     list_editable = ['price', 'stock', 'available']
     prepopulated_fields = {'slug': ('name',)}
 admin.site.register(Product, ProductAdmin)
+
